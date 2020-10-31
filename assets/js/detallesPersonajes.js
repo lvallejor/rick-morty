@@ -1,6 +1,6 @@
-import Personajes from "./personajes";
+import Personajes from "./personajes.js";
 
-class DetallesPersonajes extends Personajes {
+export default class DetallesPersonajes extends Personajes {
   constructor(
     id,
     name,
@@ -27,71 +27,69 @@ class DetallesPersonajes extends Personajes {
     this.setStatus = (status) => (this._status = status);
     this.setStatus = (status) => (this._status = status);
   }
-// id
-  get Id(){
-      return this.id;
+  // id
+  get Id() {
+    return this.id;
   }
 
-  set Id(id){
-      this.id = id
+  set Id(id) {
+    this.id = id;
   }
-// species
-get Species(){
+  // species
+  get Species() {
     return this.species;
-}
-set Species(species){
+  }
+  set Species(species) {
     this.species;
-}
-// gender
-get Gender(){
+  }
+  // gender
+  get Gender() {
     return this.gender;
-}
-set Gender(gender){
+  }
+  set Gender(gender) {
     this.gender;
-}
-// created
-get Created(){
+  }
+  // created
+  get Created() {
     return this.created;
-}
-set Created(created){
+  }
+  set Created(created) {
     this.created;
-}
-// origin
-get Origin(){
+  }
+  // origin
+  get Origin() {
     return this.origin;
-}
-set Origin(origin){
+  }
+  set Origin(origin) {
     this.origin;
-}
+  }
 
-//location
-get Location(){
+  //location
+  get Location() {
     return this.location;
-}
-set Location(location){
+  }
+  set Location(location) {
     this.location;
-}
-//Episode
-get Episode(){
+  }
+  //Episode
+  get Episode() {
     return this.episode;
-}
-set Origin(episode){
+  }
+  set Origin(episode) {
     this.episode;
-}
+  }
 
-// Get y set de los closures
+  // Get y set de los closures
   get Name() {
     return (this._name = name);
   }
-  set Name(){
-      this._name = name
-  }
+  //   set Name(){
+  //       this._name = name
+  //   }
   get Status() {
     return (this._status = status);
   }
-  set Status(){
-      this._status = status
-  }
+  //   set Status(){
+  //       this._status = status
+  //   }
 }
-
-export default DetallesPersonajes;
