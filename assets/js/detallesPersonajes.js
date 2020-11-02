@@ -78,18 +78,4 @@ export default class DetallesPersonajes extends Personajes {
   set Origin(episode) {
     this.episode;
   }
-
-  // Get y set de los closures
-  get Name() {
-    return (this._name = name);
-  }
-  //   set Name(){
-  //       this._name = name
-  //   }
-  get Status() {
-    return (this._status = status);
-  }
-  //   set Status(){
-  //       this._status = status
-  //   }
 }
