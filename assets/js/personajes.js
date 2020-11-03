@@ -1,16 +1,16 @@
 class Personajes {
   constructor(id) {
     let _id = id;
-    this.getIdentifier = () => _id; // Estos son los closures
-    this.setIdentifier = (id) => (this._id = id);
+    this.getId = () => _id; // Estos son los closures
+    this.setId = (newId) => (_id = newId);
   }
 
-  get Identifier() {
-    return this._id;
+  get Id() {
+    return this.get_id();
   }
 
-  set Identifier(id) {
-    this._id = id;
+  set Id(newId) {
+    this.setId = newId;
   }
 }
 

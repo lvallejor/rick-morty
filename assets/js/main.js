@@ -16,6 +16,7 @@ const llamadosPersonajes = (() => {
     }
   };
 
+  // Funcion privada dos de la Api
   const getDataPersonaje = async () => {
     const datoPersonaje = await consultaDatosuno();
     datoPersonaje.results.forEach(async (element) => {
@@ -26,9 +27,10 @@ const llamadosPersonajes = (() => {
         "beforeend",
         ` 
         <ul>
-                <li>${lista.id}</li>
-                <li>${lista.name}</li>
-                <li>${lista.image}</li>
+                <li>Id: ${lista.id}</li>
+                <li>Specie: ${lista.species}</li>
+                <a href="#"><img src="${lista.image}"></img></a>
+                
             </ul>
       `
       );
