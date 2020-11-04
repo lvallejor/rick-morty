@@ -1,4 +1,5 @@
 import Personajes from "./personajes.js";
+import LlamadoPersonajes from "./main.js";
 
 export default class DetallesPersonajes extends Personajes {
   constructor(
